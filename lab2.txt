@@ -1,0 +1,23 @@
+Lab: 2FA simple bypass
+
+Your credentials: wiener:peter
+Victim's credentials carlos:montoya
+
+สรุปขั้นตอนการแก้ปัญหา:
+1. เข้าสู่ระบบบัญชีของคุณเอง โดยใช้ข้อมูลประจำตัว
+username: wiener
+password: peter
+คัดลอกรหัส 2FA ที่ส่งมาทางอีเมล
+
+2. ไปที่หน้า 'บัญชีของคุณ' และบันทึก URL ของหน้าบัญชีไว้
+
+3. ออกจากระบบบัญชีของคุณเอง
+
+4. เข้าสู่ระบบด้วยข้อมูลของเหยื่อ:
+username: carlos
+password: montoya
+ป้อนรหัส 2FA ที่ได้รับจากอีเมลของเหยื่อ
+5. เปลี่ยน URL เป็น /my-account
+https://vulnerable-website.com/my-account
+
+6. เมื่อหน้า /my-account โหลดสำเร็จ แสดงว่าล็อบเสร็จสิ้น
